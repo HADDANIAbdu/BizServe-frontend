@@ -1,0 +1,19 @@
+.sidebar-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 250px;
+  z-index: 1000;
+  background-color: #333;
+  display: none;
+  transition: 0.3s;
+}
+
+.sidebar-overlay.show {
+  display: block;
+}
+
+.layout-mobile .layout-page {
+  margin-left: 0 !important; /* Ensure content is full-width when sidebar is hidden */
+}

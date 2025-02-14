@@ -1,0 +1,40 @@
+.no-bullet {
+  list-style: none !important;
+}
+
+.menu-item.active {
+  background-color: rgba(255, 255, 255, 0.2)!important; /* Lighten the background */
+  color: #f8f9fa!important; /* Soft text color */
+}
+
+.menu-item.active .menu-link {
+  color: inherit !important; /* Make sure the link adopts the text color */
+  border-left: 3px solid #f8f9fa !important; /* Highlight with a subtle border */
+}
+
+.menu-item.active:hover {
+  background-color: rgba(255, 255, 255, 0.3) !important; /* Slightly darker on hover */
+}
+
+.layout-menu {
+  width: 250px;
+  transition: all 0.3s ease-in-out;
+}
+
+.layout-menu.closed {
+  width: 0;
+  overflow: hidden;
+}
+
+.layout-menu.open {
+  width: 250px; /* or any value you prefer */
+}
+
+.menu-inner {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.layout-menu.closed .menu-inner {
+  opacity: 0;
+}

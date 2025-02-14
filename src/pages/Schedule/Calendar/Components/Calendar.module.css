@@ -1,0 +1,5 @@
+/* Calendar.module.css */
+.marked-date {
+  background-color: rgb(0, 233, 147) !important; /* Change background color for scheduled days */
+  color: white !important;
+}

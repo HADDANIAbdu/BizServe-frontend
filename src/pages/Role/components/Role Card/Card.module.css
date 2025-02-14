@@ -1,0 +1,22 @@
+.btn-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black !important;
+}
+
+.btn-text {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  white-space: nowrap;
+  transform: translateX(10px); 
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.btn-icon:hover .btn-text {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}

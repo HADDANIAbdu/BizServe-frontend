@@ -1,0 +1,31 @@
+.timeline {
+  list-style-type: none; /* Remove default list styling */
+  position: relative;
+  padding-left: 20px; /* Add space for the timeline line */
+}
+
+.timeline-item {
+  margin: 20px 0; /* Space between items */
+  position: relative;
+}
+
+.timeline-dot {
+  width: 12px; /* Dot size */
+  height: 12px; /* Dot size */
+  background-color: #007bff; /* Dot color */
+  border-radius: 50%; /* Make it round */
+  position: absolute;
+  left: 0; /* Position it on the left */
+  top: 0; /* Adjust as needed */
+}
+.timeline-container > ul::before {
+  content: "";
+  position: absolute;
+  left: 50%; /* Center the line horizontally */
+  top: 0; /* Start the line at the top */
+  width: 2px; /* Line width */
+  height: 100%; /* Line length */
+  background-color: #007bff; /* Line color */
+  transform: translateX(-50%); /* Adjust horizontal position */
+}
+

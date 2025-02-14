@@ -1,0 +1,17 @@
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Overlay on top of content */
+  }
+  
+  .position-relative {
+    position: relative; /* Ensures the overlay is positioned relative to this div */
+  }
+  
